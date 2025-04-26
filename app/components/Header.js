@@ -49,25 +49,26 @@ export default function Header() {
 
           {/* Menú de Navegación - Visible solo en pantallas grandes */}
           <nav className="hidden md:flex items-center space-x-4 lg:space-x-6 mx-6">
-            <Link href="/" aria-label="Inicio" className=" font-medium transition-colors hover:text-primary">
-              INICIO
+            <Link href="/" aria-label="Inicio" className="font-semibold tracking-wide text-[15px] uppercase text-[#6B4226] transition-colors hover:text-primary hover:underline hover:underline-offset-4"
+            >
+              Inicio
             </Link>
-            <Link href="#cabanas" aria-label="Nuestras Cabañas" className="font-medium transition-colors hover:text-primary">
+            <Link href="#cabanas" aria-label="Nuestras Cabañas" className="font-semibold tracking-wide text-[15px] uppercase text-[#6B4226] transition-colors hover:text-primary hover:underline hover:underline-offset-4">
               NUESTRAS CABAÑAS
             </Link>
-            <Link href="#galeria" aria-label="Galeria" className="font-medium transition-colors hover:text-primary">
+            <Link href="#galeria" aria-label="Galeria" className="font-semibold tracking-wide text-[15px] uppercase text-[#6B4226] transition-colors hover:text-primary hover:underline hover:underline-offset-4">
               GALERIA DE FOTOS
             </Link>
             {/* <Link href="#experiencias" aria-label="Experiencias" className="text-lg font-medium transition-colors hover:text-primary">
               Experiencias
             </Link> */}
-            <Link href="#ubicacion" aria-label="Ubicación" className="font-medium transition-colors hover:text-primary">
+            <Link href="#ubicacion" aria-label="Ubicación" className="font-semibold tracking-wide text-[15px] uppercase text-[#6B4226] transition-colors hover:text-primary hover:underline hover:underline-offset-4">
               UBICACION
             </Link>
-            <Link href="#resenas" aria-label="Reseñas" className="font-medium transition-colors hover:text-primary">
+            <Link href="#resenas" aria-label="Reseñas" className="font-semibold tracking-wide text-[15px] uppercase text-[#6B4226] transition-colors hover:text-primary hover:underline hover:underline-offset-4">
               RESEÑAS
             </Link>
-            <Link href="#contacto" aria-label="Contacto" className="font-medium transition-colors hover:text-primary">
+            <Link href="#contacto" aria-label="Contacto" className="font-semibold tracking-wide text-[15px] uppercase text-[#6B4226] transition-colors hover:text-primary hover:underline hover:underline-offset-4">
               CONTACTO
             </Link>
           </nav>
