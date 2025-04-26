@@ -707,6 +707,9 @@ h1, h2, h3, h4, h5, h6, p, span {
 .min-h-\[80px\]{
   min-height: 80px;
 }
+.min-h-\[90vh\]{
+  min-height: 90vh;
+}
 .w-10{
   width: 2.5rem;
 }
@@ -715,6 +718,9 @@ h1, h2, h3, h4, h5, h6, p, span {
 }
 .w-4{
   width: 1rem;
+}
+.w-48{
+  width: 12rem;
 }
 .w-6{
   width: 1.5rem;
@@ -895,6 +901,9 @@ h1, h2, h3, h4, h5, h6, p, span {
 .fill-current{
   fill: currentColor;
 }
+.object-contain{
+  object-fit: contain;
+}
 .object-cover{
   object-fit: cover;
 }
@@ -961,6 +970,9 @@ h1, h2, h3, h4, h5, h6, p, span {
   font-size: 2.25rem;
   line-height: 2.5rem;
 }
+.text-\[15px\]{
+  font-size: 15px;
+}
 .text-base{
   font-size: 1rem;
   line-height: 1.5rem;
@@ -976,9 +988,6 @@ h1, h2, h3, h4, h5, h6, p, span {
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-.text-\[15px\]{
-  font-size: 15px;
 }
 .font-bold{
   font-weight: 700;
@@ -1003,6 +1012,10 @@ h1, h2, h3, h4, h5, h6, p, span {
 }
 .tracking-wide{
   letter-spacing: 0.025em;
+}
+.text-\[\#6B4226\]{
+  --tw-text-opacity: 1;
+  color: rgb(107 66 38 / var(--tw-text-opacity, 1));
 }
 .text-black{
   --tw-text-opacity: 1;
@@ -1045,10 +1058,6 @@ h1, h2, h3, h4, h5, h6, p, span {
 .text-yellow-400{
   --tw-text-opacity: 1;
   color: rgb(250 204 21 / var(--tw-text-opacity, 1));
-}
-.text-\[\#6B4226\]{
-  --tw-text-opacity: 1;
-  color: rgb(107 66 38 / var(--tw-text-opacity, 1));
 }
 .underline-offset-4{
   text-underline-offset: 4px;
@@ -1230,6 +1239,16 @@ h1, h2, h3, h4, h5, h6, p, span {
     background-color: hsl(var(--background) / 0.6);
   }
 }
+@media (min-width: 640px){
+
+  .sm\:h-56{
+    height: 14rem;
+  }
+
+  .sm\:w-64{
+    width: 16rem;
+  }
+}
 @media (min-width: 768px){
 
   .md\:mb-0{
@@ -1252,8 +1271,20 @@ h1, h2, h3, h4, h5, h6, p, span {
     display: none;
   }
 
+  .md\:h-64{
+    height: 16rem;
+  }
+
+  .md\:min-h-\[calc\(100vh-3\.5rem\)\]{
+    min-height: calc(100vh - 3.5rem);
+  }
+
   .md\:w-4\/5{
     width: 80%;
+  }
+
+  .md\:w-72{
+    width: 18rem;
   }
 
   .md\:w-auto{
@@ -1281,8 +1312,16 @@ h1, h2, h3, h4, h5, h6, p, span {
 }
 @media (min-width: 1024px){
 
+  .lg\:h-72{
+    height: 18rem;
+  }
+
   .lg\:w-3\/5{
     width: 60%;
+  }
+
+  .lg\:w-80{
+    width: 20rem;
   }
 
   .lg\:grid-cols-3{

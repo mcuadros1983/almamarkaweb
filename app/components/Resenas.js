@@ -1,6 +1,7 @@
 import { Card, CardContent } from "./ui/card";
 import { Button } from "./ui/button";
 import { Star } from 'lucide-react';
+import Head from "next/head";
 
 const resenas = [
   {
@@ -25,28 +26,38 @@ const resenas = [
 
 export default function Resenas() {
   return (
-    <section id="resenas" className="py-16 bg-muted">
-      <div className="container">
-        <h2 className="text-3xl font-bold mb-8 text-center">Lo que dicen nuestros huéspedes</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {resenas.map((resena) => (
-            <Card key={resena.id}>
-              <CardContent className="p-6">
-                <div className="flex items-center mb-4" aria-label={`Puntuación: ${resena.puntuacion} estrellas`}>
-                  {[...Array(resena.puntuacion)].map((_, i) => (
-                    <Star key={i} className="text-yellow-400 fill-current" />
-                  ))}
-                </div>
-                <p className="text-muted-foreground mb-4">"{resena.comentario}"</p>
-                <p className="font-semibold">- {resena.nombre}</p>
-              </CardContent>
-            </Card>
-          ))}
+
+    <>
+      <Head>
+        <title>Reseñas | Opiniones Reales sobre ALMAMARKA</title>
+        <meta
+          name="description"
+          content="Leé las opiniones de nuestros huéspedes y descubrí por qué ALMAMARKA es sinónimo de tranquilidad, confort y conexión con la naturaleza."
+        />
+      </Head>
+      <section id="resenas" className="py-16 bg-muted">
+        <div className="container">
+          <h2 className="text-3xl font-bold mb-8 text-center">Lo que dicen nuestros huéspedes</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {resenas.map((resena) => (
+              <Card key={resena.id}>
+                <CardContent className="p-6">
+                  <div className="flex items-center mb-4" aria-label={`Puntuación: ${resena.puntuacion} estrellas`}>
+                    {[...Array(resena.puntuacion)].map((_, i) => (
+                      <Star key={i} className="text-yellow-400 fill-current" />
+                    ))}
+                  </div>
+                  <p className="text-muted-foreground mb-4">"{resena.comentario}"</p>
+                  <p className="font-semibold">- {resena.nombre}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+          {/* <div className="text-center mt-8">
+        <Button variant="outline">Comparte tu Experiencia</Button>
+      </div> */}
         </div>
-        {/* <div className="text-center mt-8">
-          <Button variant="outline">Comparte tu Experiencia</Button>
-        </div> */}
-      </div>
-    </section>
+      </section></>
+
   );
 }

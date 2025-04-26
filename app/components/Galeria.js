@@ -3,12 +3,16 @@
 import { PhotoProvider, PhotoView } from "react-photo-view";
 import "react-photo-view/dist/react-photo-view.css";
 import Image from "next/image";
+import Head from "next/head";
 
 const images = [
   { src: "/galeria/galeria1.jpeg", alt: "Vista exterior de la cabaña" },
   { src: "/galeria/galeria2.jpeg", alt: "Interior rústico de la cabaña" },
   { src: "/galeria/galeria3.jpeg", alt: "Sendero hacia las cabañas" },
-  { src: "/galeria/galeria4.jpeg", alt: "Paisaje de montaña desde las cabañas" },
+  {
+    src: "/galeria/galeria4.jpeg",
+    alt: "Paisaje de montaña desde las cabañas",
+  },
   { src: "/galeria/galeria5.jpeg", alt: "Cabañas en el amanecer" },
   { src: "/galeria/galeria6.jpeg", alt: "Atardecer sobre las cabañas" },
   { src: "/galeria/galeria7.jpeg", alt: "Rústica decoración interior" },
@@ -26,28 +30,37 @@ const images = [
 
 export default function Galeria() {
   return (
-    <section id="galeria" className="py-16">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-8 text-center">Galería</h2>
-        <PhotoProvider>
-          <div className="flex overflow-x-auto gap-4">
-            {images.map((image, index) => (
-              <PhotoView key={index} src={image.src}>
-                <div className="flex-shrink-0">
-                  <Image
-                    src={image.src}
-                    alt={image.alt}
-                    width={200} // Tamaño fijo, no usamos fill
-                    height={200}
-                    className="rounded-lg object-cover hover:scale-105 transition-transform duration-300 ease-in-out"
-                    loading="lazy" // Forzar lazy loading
-                  />
-                </div>
-              </PhotoView>
-            ))}
-          </div>
-        </PhotoProvider>
-      </div>
-    </section>
+    <>
+      <Head>
+        <title>Galería de Fotos | Conocé ALMAMARKA y su Entorno Natural</title>
+        <meta
+          name="description"
+          content="Explorá nuestra galería de imágenes y sentí la esencia de ALMAMARKA: cabañas rústicas, paisajes de montaña, amaneceres mágicos y naturaleza virgen."
+        />
+      </Head>
+      <section id="galeria" className="py-16">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-8 text-center">Galería</h2>
+          <PhotoProvider>
+            <div className="flex overflow-x-auto gap-4">
+              {images.map((image, index) => (
+                <PhotoView key={index} src={image.src}>
+                  <div className="flex-shrink-0">
+                    <Image
+                      src={image.src}
+                      alt={image.alt}
+                      width={200} // Tamaño fijo, no usamos fill
+                      height={200}
+                      className="rounded-lg object-cover hover:scale-105 transition-transform duration-300 ease-in-out"
+                      loading="lazy" // Forzar lazy loading
+                    />
+                  </div>
+                </PhotoView>
+              ))}
+            </div>
+          </PhotoProvider>
+        </div>
+      </section>
+    </>
   );
 }
