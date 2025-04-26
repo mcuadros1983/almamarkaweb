@@ -39,9 +39,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es">
       <head>
-        <link rel="canonical" href="https://almamarkacabanas.com" />
+        <link rel="canonical" href="https://almamarka.com" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.almamarkacabanas.com" />
+        <meta property="og:url" content="https://www.almamarka.com" />
         <meta property="og:site_name" content="Almamarka Cabañas" />
       </head>
       <body className={inter.className}>
