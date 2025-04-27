@@ -40,6 +40,7 @@ export default function RootLayout({ children }) {
     <html lang="es">
       <head>
         <link rel="canonical" href="https://almamarka.com" />
+        <link rel="icon" type="image/png" href="/favicon.png" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.almamarka.com" />
         <meta property="og:site_name" content="Almamarka Cabañas" />
