@@ -1,13 +1,26 @@
 import CondicionesReserva from "../components/CondicionesReserva";
-import Footer from "../components/Footer"; // Agregamos el Footer
 
-export default function CondicionesReservaPage() {
-  return (
-    <main className="py-16">
-      <div className="container">
-        <CondicionesReserva />
-      </div>
+// export default function CondicionesReservaPage() {
+//   return (
+//     <main className="py-16">
+//       <div className="container">
+//         <CondicionesReserva />
+//       </div>
       
-    </main>
-  );
+//     </main>
+//   );
+// }
+export default function CondicionesReservaPage() {
+  try {
+    return (
+      <main className="py-16">
+        <div className="container">
+          <CondicionesReserva />
+        </div>
+      </main>
+    );
+  } catch (error) {
+    console.error("Error en CondicionesReservaPage:", error);
+    return <div>Ocurrió un error al cargar la página.</div>;
+  }
 }
