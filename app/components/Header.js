@@ -32,7 +32,8 @@ export default function Header() {
         <div className="container flex h-14 items-center justify-between">
           <Link href="/" className="flex items-center space-x-2" aria-label="Página de inicio">
             <Image src="/logo3.png" alt="Cabañas Rústicas Logo" width={60} height={60} />
-            <span className="font-bold text-3xl">ALMAMARKA</span>
+            <h1 className="font-bold text-3xl">ALMAMARKA</h1>
+            {/* <span className="font-bold text-3xl">ALMAMARKA</span> */}
           </Link>
 
           {/* Botón de menú hamburguesa para móviles */}
