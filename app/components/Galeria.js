@@ -17,7 +17,7 @@ export const metadata = {
 };
 
 const images = [
-  { src: "/galeria/galeria1.jpeg", alt: "Vista exterior de la cabaña" },
+  // { src: "/galeria/galeria1.jpeg", alt: "Vista exterior de la cabaña" },
   // { src: "/galeria/galeria2.jpeg", alt: "Interior rústico de la cabaña" },
   // { src: "/galeria/galeria3.jpeg", alt: "Sendero hacia las cabañas" },
   {
