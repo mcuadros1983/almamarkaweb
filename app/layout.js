@@ -10,7 +10,12 @@ export const metadata = {
     "ALMAMARKA | Cabañas de Adobe | Vive la calma del adobe en plena naturaleza",
   description:
     "Descubre nuestras cabañas de adobe en un entorno natural único. Experimenta la serenidad y la conexión con la naturaleza en San Fernando del Valle de Catamarca.",
-  keywords:
+    icons: {
+      icon: "/favicon.ico",
+      shortcut: "/favicon.ico",
+      apple: "/favicon.ico",
+    },
+    keywords:
     "almamarka, cabañas rústicas, adobe, naturaleza, San Fernando del Valle de Catamarca, turismo sustentable",
   author:"ALMAMARKA Cabañas",
   openGraph: {
@@ -40,7 +45,6 @@ export default function RootLayout({ children }) {
     <html lang="es">
       <head>
         <link rel="canonical" href="https://almamarka.com" />
-        <link rel="icon" type="image/png" href="/favicon.png" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.almamarka.com" />
         <meta property="og:site_name" content="Almamarka Cabañas" />
