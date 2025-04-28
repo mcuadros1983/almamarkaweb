@@ -54,7 +54,7 @@ export default function Galeria() {
                       alt={image.alt}
                       width={200} // Tamaño fijo, no usamos fill
                       height={200}
-                      style={{ width: 'auto', height: 'auto' }} // o el inverso
+                      // style={{ width: 'auto', height: 'auto' }} // o el inverso
                       className="rounded-lg object-cover hover:scale-105 transition-transform duration-300 ease-in-out"
                       loading="lazy" // Forzar lazy loading
                     />
