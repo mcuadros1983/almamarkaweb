@@ -16,15 +16,15 @@ export default function Footer() {
         <div className="container">
           <div className="flex flex-wrap justify-between items-center">
             <div className="flex space-x-4 mb-4 md:mb-0">
-              <Link href="https://instagram.com" aria-label="Síguenos en Instagram">
+              <Link href="https://www.instagram.com/almamarka.cta" aria-label="Síguenos en Instagram">
                 <Instagram className="text-muted-foreground hover:text-primary" />
               </Link>
-              <Link href="https://facebook.com" aria-label="Síguenos en Facebook">
+              <Link href="https://www.facebook.com/Almamarka.cta" aria-label="Síguenos en Facebook">
                 <Facebook className="text-muted-foreground hover:text-primary" />
               </Link>
-              <Link href="https://youtube.com" aria-label="Visita nuestro canal de YouTube">
+              {/* <Link href="https://youtube.com" aria-label="Visita nuestro canal de YouTube">
                 <Youtube className="text-muted-foreground hover:text-primary" />
-              </Link>
+              </Link> */}
             </div>
             <div className="text-sm text-muted-foreground">
               <button
