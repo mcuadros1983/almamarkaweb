@@ -15,7 +15,18 @@ import {
   Waves,
   Wifi,
 } from "lucide-react";
-import Head from "next/head";
+
+// ✅ Modo correcto ahora (reemplaza el <Head>):
+export const metadata = {
+  title: "Nuestras Cabañas | Experiencia de Relax en Adobe",
+  description:
+    "Descubrí nuestras cabañas diseñadas en adobe, pensadas para brindar comodidad, privacidad y conexión con la naturaleza en cada estadía.",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
+  },
+};
 
 const cabanas = [
   { id: 1, name: "Carqueja", capacity: 4, image: "/cabanas/carqueja.jpg" },
@@ -48,58 +59,48 @@ const serviciosComunes = [
 
 export default function Amenidades() {
   return (
-    // <section id="amenidades" className="py-16">
-    <>
-      <Head>
-        <title>Nuestras Cabañas | Experiencia de Relax en Adobe</title>
-        <meta
-          name="description"
-          content="Descubrí nuestras cabañas diseñadas en adobe, pensadas para brindar comodidad, privacidad y conexión con la naturaleza en cada estadía."
-        />
-      </Head>
-      <section id="cabanas" className="py-16">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8 text-center">
-            Nuestras Cabañas & Servicios
-          </h2>
+    <section id="cabanas" className="py-16">
+      <div className="container mx-auto px-4">
+        <h2 className="text-3xl font-bold mb-8 text-center">
+          Nuestras Cabañas & Servicios
+        </h2>
 
-          {/* Tarjetas de Cabañas */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-            {cabanas.map((cabana) => (
-              <Card key={cabana.id} className="overflow-hidden">
-                <Image
-                  src={cabana.image}
-                  alt={`Cabaña ${cabana.name}`}
-                  width={400}
-                  height={300}
-                  className="w-full h-48 object-cover"
-                />
-                <CardContent className="p-4 text-center">
-                  <h3 className="text-xl font-semibold">{cabana.name}</h3>
-                  <p className="text-muted-foreground mt-2">
-                    Capacidad: {cabana.capacity} personas
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-
-          {/* Servicios Comunes */}
-          <div className="bg-muted rounded-lg p-8">
-            <h3 className="text-2xl font-bold mb-6 text-center">
-              Servicios incluidos en todas las cabañas
-            </h3>
-            <ul className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {serviciosComunes.map((servicio, index) => (
-                <li key={index} className="flex items-center text-lg">
-                  <servicio.icon className="w-6 h-6 mr-3 text-primary" />
-                  {servicio.name}
-                </li>
-              ))}
-            </ul>
-          </div>
+        {/* Tarjetas de Cabañas */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          {cabanas.map((cabana) => (
+            <Card key={cabana.id} className="overflow-hidden">
+              <Image
+                src={cabana.image}
+                alt={`Cabaña ${cabana.name}`}
+                width={400}
+                height={300}
+                className="w-full h-48 object-cover"
+              />
+              <CardContent className="p-4 text-center">
+                <h3 className="text-xl font-semibold">{cabana.name}</h3>
+                <p className="text-muted-foreground mt-2">
+                  Capacidad: {cabana.capacity} personas
+                </p>
+              </CardContent>
+            </Card>
+          ))}
         </div>
-      </section>
-    </>
+
+        {/* Servicios Comunes */}
+        <div className="bg-muted rounded-lg p-8">
+          <h3 className="text-2xl font-bold mb-6 text-center">
+            Servicios incluidos en todas las cabañas
+          </h3>
+          <ul className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {serviciosComunes.map((servicio, index) => (
+              <li key={index} className="flex items-center text-lg">
+                <servicio.icon className="w-6 h-6 mr-3 text-primary" />
+                {servicio.name}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </section>
   );
 }

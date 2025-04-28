@@ -9,7 +9,17 @@ import "swiper/css/navigation"; // Opcional: para botones de navegación
 import "swiper/css/pagination"; // Opcional: para paginación
 import "swiper/css/autoplay"; // Opcional: para autoplay
 import "swiper/css/effect-fade"; // Importar estilos para el efecto fade
-import Head from "next/head";
+
+export const metadata = {
+  title: "ALMAMARKA | Refugio de Adobe en San Fernando del Valle de Catamarca",
+  description:
+    "Viví la experiencia única de ALMAMARKA: nuestras cabañas rústicas de adobe te invitan a disfrutar de la calma, la naturaleza y la autenticidad en Catamarca.",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
+  },
+};
 
 export default function Hero() {
   const slides = [
@@ -49,17 +59,6 @@ export default function Hero() {
   ];
 
   return (
-    <>
-      {" "}
-      <Head>
-        <title>
-          ALMAMARKA | Refugio de Adobe en San Fernando del Valle de Catamarca
-        </title>
-        <meta
-          name="description"
-          content="Viví la experiencia única de ALMAMARKA: nuestras cabañas rústicas de adobe te invitan a disfrutar de la calma, la naturaleza y la autenticidad en Catamarca."
-        />
-      </Head>
       <section className="relative h-[calc(100vh-3.5rem)]">
         <Swiper
           modules={[Navigation, Pagination, Autoplay, EffectFade]} // Habilitar EffectFade
@@ -130,6 +129,5 @@ export default function Hero() {
           ))}
         </Swiper>
       </section>
-    </>
   );
 }

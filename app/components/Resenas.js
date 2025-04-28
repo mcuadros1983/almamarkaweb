@@ -1,7 +1,18 @@
 import { Card, CardContent } from "./ui/card";
 import { Button } from "./ui/button";
 import { Star } from 'lucide-react';
-import Head from "next/head";
+
+
+export const metadata = {
+  title: "Reseñas | Opiniones Reales sobre ALMAMARKA",
+  description:
+    "Leé las opiniones de nuestros huéspedes y descubrí por qué ALMAMARKA es sinónimo de tranquilidad, confort y conexión con la naturaleza.",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
+  },
+};
 
 const resenas = [
   {
@@ -26,15 +37,6 @@ const resenas = [
 
 export default function Resenas() {
   return (
-
-    <>
-      <Head>
-        <title>Reseñas | Opiniones Reales sobre ALMAMARKA</title>
-        <meta
-          name="description"
-          content="Leé las opiniones de nuestros huéspedes y descubrí por qué ALMAMARKA es sinónimo de tranquilidad, confort y conexión con la naturaleza."
-        />
-      </Head>
       <section id="resenas" className="py-16 bg-muted">
         <div className="container">
           <h2 className="text-3xl font-bold mb-8 text-center">Lo que dicen nuestros huéspedes</h2>
@@ -57,7 +59,6 @@ export default function Resenas() {
         <Button variant="outline">Comparte tu Experiencia</Button>
       </div> */}
         </div>
-      </section></>
-
+      </section>
   );
 }

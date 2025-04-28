@@ -20,7 +20,7 @@ export default function Home() {
       {/* <Header /> */}
       <main>
         <Hero />
-        <BookingEngine /> {/* << Motor de reservas aquí */}
+        {/* <BookingEngine />  */}
         {/* <LineaDeTiempo />  */}
         <Amenidades />
         {/* <Cabanas /> */}

@@ -1,17 +1,19 @@
 import { Card, CardContent } from "./ui/card";
 import { ChevronRight } from "lucide-react";
-import Head from "next/head";
+
+export const metadata = {
+  title: "Ubicación | Cómo Llegar a ALMAMARKA Refugio de Adobe",
+  description:
+    "Encontranos en un entorno privilegiado en Banda de Varela, San Fernando del Valle de Catamarca. Acceso fácil en auto a solo 8 km del centro.",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
+  },
+};
 
 export default function Ubicacion() {
   return (
-    <>
-      <Head>
-        <title>Ubicación | Cómo Llegar a ALMAMARKA Refugio de Adobe</title>
-        <meta
-          name="description"
-          content="Encontranos en un entorno privilegiado en Banda de Varela, San Fernando del Valle de Catamarca. Acceso fácil en auto a solo 8 km del centro."
-        />
-      </Head>
       <section id="ubicacion" className="py-16">
         <div className="container">
           <h2 className="text-3xl font-bold mb-8 text-center">Ubicación</h2>
@@ -61,7 +63,6 @@ export default function Ubicacion() {
             </Card>
           </div>
         </div>
-      </section> </>
-
+      </section> 
   );
 }

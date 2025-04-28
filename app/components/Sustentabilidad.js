@@ -1,17 +1,18 @@
 import { Card, CardContent } from "./ui/card";
 import { Leaf, Recycle } from 'lucide-react';
-import Head from "next/head";
 
+export const metadata = {
+  title: "Sustentabilidad | Compromiso Ecológico en ALMAMARKA",
+  description:
+    "En ALMAMARKA apostamos al turismo responsable: construcción natural en adobe, energías renovables y prácticas que cuidan nuestro entorno.",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
+  },
+};
 export default function Sustentabilidad() {
   return (
-    <>
-      <Head>
-        <title>Sustentabilidad | Compromiso Ecológico en ALMAMARKA</title>
-        <meta
-          name="description"
-          content="En ALMAMARKA apostamos al turismo responsable: construcción natural en adobe, energías renovables y prácticas que cuidan nuestro entorno."
-        />
-      </Head>
       <section id="sustentabilidad" className="py-16">
         <div className="container">
           <h2 className="text-3xl font-bold mb-8 text-center">Sustentabilidad y Construcción</h2>
@@ -45,6 +46,5 @@ export default function Sustentabilidad() {
           </div>
         </div>
       </section>
-    </>
   );
 }

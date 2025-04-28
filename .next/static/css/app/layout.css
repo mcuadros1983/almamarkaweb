@@ -824,14 +824,6 @@ h1, h2, h3, h4, h5, h6, p, span {
 .rounded-md{
   border-radius: calc(var(--radius) - 2px);
 }
-.rounded-l-none{
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
-}
-.rounded-r-none{
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
-}
 .rounded-t-lg{
   border-top-left-radius: var(--radius);
   border-top-right-radius: var(--radius);
@@ -1253,10 +1245,6 @@ h1, h2, h3, h4, h5, h6, p, span {
     margin-bottom: 0px;
   }
 
-  .md\:mt-0{
-    margin-top: 0px;
-  }
-
   .md\:block{
     display: block;
   }
@@ -1271,10 +1259,6 @@ h1, h2, h3, h4, h5, h6, p, span {
 
   .md\:w-4\/5{
     width: 80%;
-  }
-
-  .md\:w-auto{
-    width: auto;
   }
 
   .md\:grid-cols-2{

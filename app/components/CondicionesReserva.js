@@ -2,18 +2,22 @@
 
 import { Card, CardContent } from "./ui/card";
 import { Button } from "./ui/button";
-import Head from "next/head";
+
+
+// ✅ Modo correcto ahora (reemplaza el <Head>):
+export const metadata = {
+  title: "Condiciones de Reserva | Informate de nuestras condiciones de reserva",
+  description:
+    "Informate de nuestras condiciones de reserva.",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
+  },
+};
 
 export default function CondicionesReserva() {
   return (
-    <> 
-    <Head>
-      <title>Condiciones de Reserva | Informate de nuestras condiciones de reserva</title>
-      <meta
-        name="description"
-        content="Informate de nuestras condiciones de reserva."
-      />
-    </Head>
     <section id="condiciones" className="py-16 bg-muted">
     <div className="container">
       <h2 className="text-3xl font-bold mb-8 text-center">Condiciones de Reserva</h2>
@@ -111,7 +115,6 @@ export default function CondicionesReserva() {
         </CardContent>
       </Card>
     </div>
-  </section></>
-    
+  </section>    
   );
 }
