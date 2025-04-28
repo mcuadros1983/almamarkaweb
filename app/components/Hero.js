@@ -100,9 +100,9 @@ export default function Hero() {
                 <h4 className="text-2xl font-bold mb-4">{slide.title2}</h4>
                 <p className="text-lg mb-2">{slide.subtitle}</p>
                 <p className="text-xl mb-6">{slide.description}</p> */}
-                  <h1 className="text-4xl md:text-6xl font-bold mb-4">
+                  <h2 className="text-4xl md:text-6xl font-bold mb-4">
                     {slide.title}
-                  </h1>
+                  </h2>
                   <h4 className="text-2xl md:text-4xl font-bold mb-4">
                     {slide.title2}
                   </h4>
