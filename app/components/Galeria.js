@@ -18,8 +18,8 @@ export const metadata = {
 
 const images = [
   { src: "/galeria/galeria1.jpeg", alt: "Vista exterior de la cabaña" },
-  { src: "/galeria/galeria2.jpeg", alt: "Interior rústico de la cabaña" },
-  { src: "/galeria/galeria3.jpeg", alt: "Sendero hacia las cabañas" },
+  // { src: "/galeria/galeria2.jpeg", alt: "Interior rústico de la cabaña" },
+  // { src: "/galeria/galeria3.jpeg", alt: "Sendero hacia las cabañas" },
   {
     src: "/galeria/galeria4.jpeg",
     alt: "Paisaje de montaña desde las cabañas",
@@ -27,7 +27,7 @@ const images = [
   { src: "/galeria/galeria5.jpeg", alt: "Cabañas en el amanecer" },
   { src: "/galeria/galeria6.jpeg", alt: "Atardecer sobre las cabañas" },
   { src: "/galeria/galeria7.jpeg", alt: "Rústica decoración interior" },
-  { src: "/galeria/galeria8.jpeg", alt: "Vista panorámica del predio" },
+  // { src: "/galeria/galeria8.jpeg", alt: "Vista panorámica del predio" },
   // { src: "/galeria/galeria9.jpg", alt: "Vista interior1 cabañas" },
   { src: "/galeria/galeria10.jpg", alt: "Vista interior2 cabañas" },
   { src: "/galeria/galeria11.jpg", alt: "Vista interior3 cabañas" },

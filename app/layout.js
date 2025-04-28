@@ -1,7 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import FloatingButton from "./components/FloatingButton";
-import Header from "./components/Header"; 
+import Header from "./components/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -9,11 +9,11 @@ export const metadata = {
   title: "ALMAMARKA | Cabañas de Adobe | Vive la calma del adobe en plena naturaleza",
   description: "Descubre nuestras cabañas de adobe en un entorno natural único. Experimenta la serenidad y la conexión con la naturaleza en San Fernando del Valle de Catamarca.",
   keywords: [
-    "almamarka", 
-    "cabañas rústicas", 
-    "adobe", 
-    "naturaleza", 
-    "San Fernando del Valle de Catamarca", 
+    "almamarka",
+    "cabañas rústicas",
+    "adobe",
+    "naturaleza",
+    "San Fernando del Valle de Catamarca",
     "turismo sustentable"
   ],
   authors: [{ name: "ALMAMARKA Cabañas" }],
@@ -44,7 +44,11 @@ export const metadata = {
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
-    apple: "/favicon.ico", 
+    apple: "/favicon.ico",
+  },
+  robots: "index,follow",
+  alternates: {
+    canonical: 'https://www.almamarka.com/',
   },
 };
 
