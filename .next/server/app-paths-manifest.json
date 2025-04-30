@@ -1,4 +1,7 @@
 {
+  "/_not-found/page": "app/_not-found/page.js",
+  "/condiciones-reserva/page": "app/condiciones-reserva/page.js",
   "/page": "app/page.js",
+  "/api/contacto/route": "app/api/contacto/route.js",
   "/favicon.ico/route": "app/favicon.ico/route.js"
 }

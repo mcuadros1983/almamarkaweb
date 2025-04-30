@@ -1,16 +1,40 @@
 {
   "pages": {
-    "/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/page.css",
-      "static/chunks/app/page.js"
+    "/_not-found/page": [
+      "static/chunks/webpack-3e4d113c6784b0c3.js",
+      "static/chunks/fd9d1056-f5ca11604835b0e5.js",
+      "static/chunks/23-f90b3e5dd88b97f3.js",
+      "static/chunks/main-app-1e649190e509b0f6.js",
+      "static/chunks/app/_not-found/page-32bdbccea9ad76b3.js"
     ],
     "/layout": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/layout.css",
-      "static/chunks/app/layout.js"
+      "static/chunks/webpack-3e4d113c6784b0c3.js",
+      "static/chunks/fd9d1056-f5ca11604835b0e5.js",
+      "static/chunks/23-f90b3e5dd88b97f3.js",
+      "static/chunks/main-app-1e649190e509b0f6.js",
+      "static/css/16b910fdb5558390.css",
+      "static/chunks/934-5b8c00e458509a09.js",
+      "static/chunks/974-7710e149fe3def79.js",
+      "static/chunks/app/layout-fac5f7132b6702a6.js"
+    ],
+    "/condiciones-reserva/page": [
+      "static/chunks/webpack-3e4d113c6784b0c3.js",
+      "static/chunks/fd9d1056-f5ca11604835b0e5.js",
+      "static/chunks/23-f90b3e5dd88b97f3.js",
+      "static/chunks/main-app-1e649190e509b0f6.js",
+      "static/chunks/934-5b8c00e458509a09.js",
+      "static/chunks/app/condiciones-reserva/page-b6e74e5c55cda5fc.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-3e4d113c6784b0c3.js",
+      "static/chunks/fd9d1056-f5ca11604835b0e5.js",
+      "static/chunks/23-f90b3e5dd88b97f3.js",
+      "static/chunks/main-app-1e649190e509b0f6.js",
+      "static/css/39600b4f31eb8c2b.css",
+      "static/chunks/934-5b8c00e458509a09.js",
+      "static/chunks/974-7710e149fe3def79.js",
+      "static/chunks/700-85936215b17126b0.js",
+      "static/chunks/app/page-bc25f7960ee2fa6a.js"
     ]
   }
 }
