@@ -1,10 +1,9 @@
+// app/layout.js
 import { Inter } from "next/font/google";
 import "./globals.css";
-// import FloatingButton from "./components/FloatingButton";
-// import Header from "./components/Header";
-// import TagManager from "react-gtm-module";
-// import { useEffect } from "react";
-import ClientWrapper from "./components/ClientWrapper";
+import Header from "./components/Header"; // que puede ser server o client
+import FloatingButton from "./components/FloatingButton"; // client
+import TagManagerInit from "./components/TagManagerInit"; // solo carga useEffect
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -79,7 +78,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es">
       <body className={inter.className}>
-        <ClientWrapper>{children}</ClientWrapper>
+        <Header />
+        <FloatingButton />
+        <TagManagerInit />
+        {children}
       </body>
     </html>
   );
