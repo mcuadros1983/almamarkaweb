@@ -29,10 +29,10 @@ export const metadata = {
 };
 
 const cabanas = [
-  { id: 1, name: "Carqueja", capacity: 4, image: "/cabanas/carqueja.jpg" },
-  { id: 2, name: "Malva", capacity: 4, image: "/cabanas/malva.jpg" },
-  { id: 3, name: "Jarilla", capacity: 4, image: "/cabanas/jarilla.jpg" },
-  { id: 4, name: "Tusca", capacity: 4, image: "/cabanas/tusca.jpg" },
+  { id: 1, name: "Carqueja", capacity: 4, image: "/cabanas/Carqueja.jpg" },
+  { id: 2, name: "Malva", capacity: 4, image: "/cabanas/Malva.jpg" },
+  { id: 3, name: "Jarilla", capacity: 4, image: "/cabanas/Jarilla.jpg" },
+  { id: 4, name: "Tusca", capacity: 4, image: "/cabanas/Tusca.jpg" },
   { id: 5, name: "Retama", capacity: 4, image: "/cabanas/retama.jpg" },
   { id: 6, name: "Pichanilla", capacity: 4, image: "/cabanas/pichanilla.jpg" },
   { id: 7, name: "Acacia", capacity: 6, image: "/cabanas/acacia.jpg" },
