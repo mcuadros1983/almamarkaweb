@@ -2,19 +2,22 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import FloatingButton from "./components/FloatingButton";
 import Header from "./components/Header";
-
+import TagManager from "react-gtm-module";
+import { useEffect } from "react";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "ALMAMARKA | Cabañas de Adobe | Vive la calma del adobe en plena naturaleza",
-  description: "Descubre nuestras cabañas de adobe en un entorno natural único. Experimenta la serenidad y la conexión con la naturaleza en San Fernando del Valle de Catamarca.",
+  title:
+    "ALMAMARKA | Cabañas de Adobe | Vive la calma del adobe en plena naturaleza",
+  description:
+    "Descubre nuestras cabañas de adobe en un entorno natural único. Experimenta la serenidad y la conexión con la naturaleza en San Fernando del Valle de Catamarca.",
   keywords: [
     "almamarka",
     "cabañas rústicas",
     "adobe",
     "naturaleza",
     "San Fernando del Valle de Catamarca",
-    "turismo sustentable"
+    "turismo sustentable",
   ],
   authors: [{ name: "ALMAMARKA Cabañas" }],
   creator: "ALMAMARKA Cabañas",
@@ -25,7 +28,8 @@ export const metadata = {
     url: "https://www.almamarka.com",
     siteName: "ALMAMARKA Cabañas",
     title: "ALMAMARKA | Cabañas Rústicas | Experiencia única en la naturaleza",
-    description: "Vive una experiencia inolvidable en nuestras cabañas de adobe, rodeado de naturaleza y paz.",
+    description:
+      "Vive una experiencia inolvidable en nuestras cabañas de adobe, rodeado de naturaleza y paz.",
     images: [
       {
         url: "https://www.almamarka.com/og-image.png",
@@ -38,7 +42,8 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "ALMAMARKA | Cabañas Rústicas | Experiencia única en la naturaleza",
-    description: "Vive una experiencia inolvidable en nuestras cabañas de adobe, rodeado de naturaleza y paz.",
+    description:
+      "Vive una experiencia inolvidable en nuestras cabañas de adobe, rodeado de naturaleza y paz.",
     images: ["https://www.almamarka.com/twitter-image.jpg"],
   },
   icons: {
@@ -48,11 +53,15 @@ export const metadata = {
   },
   robots: "index,follow",
   alternates: {
-    canonical: 'https://www.almamarka.com/',
+    canonical: "https://www.almamarka.com/",
   },
 };
 
 export default function RootLayout({ children }) {
+  useEffect(() => {
+    TagManager.initialize({ gtmId: "GTM-JZX6ZPF" });
+  }, []);
+
   return (
     <html lang="es">
       <body className={inter.className}>
