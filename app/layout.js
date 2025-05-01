@@ -75,7 +75,7 @@ export const metadata = {
 // }
 
 export default function RootLayout({ children }) {
-  consolel.log("init")
+  
   return (
     <html lang="es">
       <body className={inter.className}>
